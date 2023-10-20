@@ -1,0 +1,30 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8499a5; /* Cor de fundo */
+}
+
+.container {
+    position: relative;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 768px) {
+    /* Adaptação para telas menores, como celulares */
+    .square {
+        width: 30px;
+        height: 30px;
+    }
+}
